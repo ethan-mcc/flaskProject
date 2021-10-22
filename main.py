@@ -24,7 +24,7 @@ def login_page():
             return render_template('welcome.html')
         else:
             print("failed login")
-            return render_template('login.html')
+            return render_template('login.html', message="Try Again")
     return render_template('login.html')
 
 @app.route('/register', methods=['GET', 'POST'])
